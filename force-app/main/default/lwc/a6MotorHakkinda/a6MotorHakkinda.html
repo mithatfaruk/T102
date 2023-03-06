@@ -1,0 +1,17 @@
+<template>
+
+  <h1>MOTOR HAKKINDA</h1> 
+  <br>
+  <h1>Motor Cinsi: {motorCinsi}</h1>
+  <lightning-input type="text" 
+    label="mOTOR Turu Giriniz" 
+    onblur={handleMotorTuru}>
+</lightning-input> 
+  
+  <c-a6-motor-ozellikleri
+   yakit-turu={yakitTuruParent}
+   motor-gucu=2.0
+   beygir-gucu=180 >
+
+  </c-a6-motor-ozellikleri> 
+</template>

@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Childdan Event HTML Dinlemek" >
+    <c-a10event-childhtml 
+    onclick={handleClick}> 
+      
+    </c-a10event-childhtml>
+    <h1>Parenttin dinledigi Click Sayisi :: {clickSayisi}</h1>
+    </lightning-card> 
+    <h1>******************</h1>
+    <lightning-card title="Childden event JS Dinlemek">
+      <h1>Burası Parent ve Childden dinleyerek alert oluşturacağız</h1>
+      
+      <c-a10event-child-js>
+
+      </c-a10event-child-js>
+
+    </lightning-card>
+
+  </template>

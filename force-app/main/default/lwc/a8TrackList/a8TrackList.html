@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="List icin @track uygulamasi">
+        <lightning-input
+        type="text"
+        label="Adinizi Giriniz "
+        onblur ={handleName}  > </lightning-input>
+        <lightning-input
+        type="text"
+        label="Yasinizi Giriniz "
+        onblur ={handleYas}  >  </lightning-input>
+        <lightning-button variant="brand"
+                          label="Birey Ekle"
+                          title="Primary action"
+                          onclick={handleClick}
+                          class="slds-m-left_x-small">
+                        </lightning-button>
+        <template for:each={aileBireyleri} for:item="birey" >
+            <ol key={birey.id}>
+                    <li >
+                        <p>  Birey adi ::  {birey.name}      </p>
+                        <p>  Bireyin yasi ::  {birey.yas}    </p>
+                        <p>   ********   </p>
+                    </li>
+              <br>
+           </ol>
+          </template>
+    </lightning-card>
+</template>

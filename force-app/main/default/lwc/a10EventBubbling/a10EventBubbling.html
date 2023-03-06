@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="EVENT BUBBLING" > 
+    <div
+        class="disDiv"
+        onclick={handleDisClick}>
+
+        <div 
+        class="ortaDiv"
+        onclick={handleOrtaClick}>
+
+            <div 
+            class="icDiv"
+            onclick={handleIcClick}>
+
+            </div>
+
+        </div>
+        <h1>Babadan gelen bilgi{babadanGelenBilgi}</h1>
+        <h1>içtern gelen bilgi {torundanGelenBilgi}</h1>
+
+    </div>
+
+
+    <h1>Içerideki div click sayısı {icClick}</h1>
+    <h1>Orta div click sayısı {ortaClick}</h1>
+    <h1>Dis div click sayısı {disClick}</h1>
+</lightning-card>
+</template>

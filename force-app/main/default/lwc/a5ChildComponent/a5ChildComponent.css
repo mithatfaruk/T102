@@ -1,0 +1,14 @@
+h1 {
+    color: aqua;
+}
+P{
+    color: var(--pyidegistir,brown);
+}
+.güzel{
+    /*color: palevioletred;*/
+    color: var(--parenttanrenkdegistir,black);
+    background-color: aqua;
+    font-style: italic;
+    display: inline-block;
+
+}

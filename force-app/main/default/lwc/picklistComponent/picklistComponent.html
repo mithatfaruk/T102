@@ -1,0 +1,15 @@
+<template>
+
+<lightning-card title="Pıcklist Component">
+
+    <lightning-combobox name="deneme" label="Ulke ve Baskent Eslesmesi"
+        options={secenekler} value={secilen} onchange={handlePicklist}>
+    
+    </lightning-combobox>
+
+    <h1>Secilen Ülkenin Başkenti {secilen}</h1>
+
+
+</lightning-card>
+    
+</template>

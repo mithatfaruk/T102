@@ -1,0 +1,42 @@
+<template>
+
+
+<lightning-card title="Object İçin For:Each Loop">
+    <template for:each={cicekListesi} for:item="cicek"> 
+      <ol key={cicek.id}>
+        <li>
+            <p>Çiçek Adı: {cicek.name}</p>
+            <p>Familya   :{cicek.familya}</p>
+            <img src={cicek.imgUrl} alt="cicek" width="200" height="250">
+
+        </li>
+
+      </ol>
+</template>
+
+</lightning-card >
+<lightning-card title="Object İçin ITERATOR">
+    <template iterator:it={cicekListesi} >
+      <ol key={it.value.id}>
+        <li>
+            <p>Çiçek Adı: {it.value.name}</p>
+            <p>Familya : {it.value.familya}</p>
+            <img src={it.value.imgUrl} alt="cicek" width="200" height="250">
+
+        </li>
+
+      </ol>  
+
+    </template>
+
+
+</lightning-card>
+
+
+
+
+
+
+
+    
+</template>

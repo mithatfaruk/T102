@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="List Rendering (for:each)">
+        <h1>{sehirListesi}</h1>
+        <template for:each={sehirListesi} for:item="teksehir">
+         <p key={teksehir}> sehrin adı: {teksehir}</p>   
+
+        </template>
+        </lightning-card>
+
+    <lightning-card title="List Rendering (ITERATOR)">
+      
+      <p>ITERATOR ile oluşturduk</p>
+        <template iterator:it={sehirListesi}>
+            
+         
+         <p key={it.value} if:true={it.first}>BAKIN NEREDE ÇIKTI it.first</p>
+         <p key={it.value} if:true={it.last}>BAKIN NEREDE ÇIKTI it.last</p>
+         <p key={it.value}>Şehrin Adı: {it.value}</p>
+      </template>  
+    </lightning-card>
+
+</template>

@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="get ve set methodlari uygulamasi">
+      <lightning-input 
+      type="number"
+      min="0"
+      label="lutfen yasinizi girniz"
+      placeholder="lutfen yasinizi giriniz"
+      onchange={handleYas}></lightning-input>
+     
+  <c-a9get-set-child  dogum-yili={girilenYas}  >
+  </c-a9get-set-child>
+    </lightning-card>  
+  </template>

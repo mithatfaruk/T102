@@ -1,0 +1,11 @@
+h1{
+    color:red;
+}
+p{
+    color: blueviolet;
+}
+c-a5-child-component {
+    color:green;
+    --parenttanrenkdegistir :red; 
+    --pyidegistir: black;
+}
