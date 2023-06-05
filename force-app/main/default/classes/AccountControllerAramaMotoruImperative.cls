@@ -1,6 +1,6 @@
 public with sharing class AccountControllerAramaMotoruImperative {
   
-    //  @AuraEnabled(cacheable=true)
+    
       @AuraEnabled
       public static List<Account> getAllAccounts(String isim ){
           

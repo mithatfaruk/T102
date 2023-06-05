@@ -1,0 +1,34 @@
+<template>
+
+    <lightning-card >
+        <template for:each={sehirListesi} for:item='liste'>
+
+            <p key={liste}>Şehirler::{liste}</p>
+        </template> 
+
+        <template iterator:it={sehirListesi}>
+
+            <p key={it.value}>Şehir Listesi::{it.value}</p>
+
+        </template>
+
+
+        <template for:each={sehirListesi} for:item="cicek">
+
+            <ol key={cicek.id}>
+                <li>
+                    <p>cicek adı::{cicek.ad}</p>
+
+                </li>
+
+            </ol>
+
+
+
+
+        </template>
+
+
+    </lightning-card>
+    
+</template>

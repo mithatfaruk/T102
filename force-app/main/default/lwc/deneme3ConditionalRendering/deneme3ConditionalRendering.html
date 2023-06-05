@@ -1,0 +1,33 @@
+<template>
+    
+<lightning-card>
+
+    <lightning-input type="checkbox"
+                    label="Flag Control"
+                    
+                    onchange={handleFlag}>
+                </lightning-input>
+              
+     <lightning-input  type="password" label="Enter Password" onblur={handlePass}></lightning-input>
+     <template if:true={showMessage}>
+        <h1>WELCOME</h1>
+     </template>
+     <template if:false={showMessage}>
+        <h1>SORRY</h1>
+     </template>
+                
+
+<template if:true={flag}>
+<h1>LIFE IS SO GOOD</h1>
+
+</template>
+
+<template if:false={flag}>
+
+    <h1>LIFE IS SO BAD</h1>
+</template>
+
+</lightning-card>
+
+
+</template>

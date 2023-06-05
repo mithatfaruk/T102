@@ -1,0 +1,41 @@
+<template>
+    
+<lightning-card>
+
+<lightning-input type="text"
+                 label="İsimi Giriniz"
+                 onblur={handleName}></lightning-input>
+
+<lightning-input type="text"
+                 label="Yas Giriniz"
+                 onblur={handleYas}></lightning-input>
+
+              
+<lightning-button variant="brand" 
+                    label="Ekle" 
+                    title="Primary action" 
+                    onclick={handleClick} 
+                    class="slds-m-left_x-small"></lightning-button>
+
+
+    <template for:each={aileBireyleri} for:item='birey'>
+
+        <ol key={birey.id}>
+
+            <li>
+                <p>Birey name::{birey.name}</p>
+                <p>Bireyin Yası::{birey.yas}</p>
+            </li>
+
+        </ol>
+
+
+    </template>
+
+
+</lightning-card>
+
+
+
+
+</template>

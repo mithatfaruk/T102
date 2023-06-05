@@ -15,7 +15,13 @@ musteri ={
     Yas:0
 }
 handleAyva(event){
-this.musteri= event.detail
+
+
+
+let yeniMusteri= event.detail
+let geciciKopya={...yeniMusteri}
+geciciKopya.name=geciciKopya.name.toUpperCase()
+this.musteri=geciciKopya
 }
 
 

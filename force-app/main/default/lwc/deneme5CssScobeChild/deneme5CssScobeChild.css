@@ -1,0 +1,10 @@
+
+.hayat{
+
+    color: var(--parenttaRenkDegistir, yellow);
+    font-style: italic;
+
+}
+h1{
+    color: var(--parenttaRenkDegistir);
+}

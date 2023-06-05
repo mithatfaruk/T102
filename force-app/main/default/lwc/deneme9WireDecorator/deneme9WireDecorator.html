@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="ACCOUNTS with @WIRE">
+
+        <template for:each={butunAccountlar.data} for:item="accountlar">
+
+            <ol key={accountlar.Id}>
+
+                <li>
+                    <p>account adi ::{accountlar.Name}</p>
+                </li>
+
+            </ol>
+
+        </template>
+
+        
+
+    </lightning-card>
+</template>

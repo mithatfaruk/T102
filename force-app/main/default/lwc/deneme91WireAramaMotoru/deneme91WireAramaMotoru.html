@@ -1,0 +1,34 @@
+<template>
+
+
+    <lightning-card>
+
+        <lightning-input type="text"
+                         label="Account Ismı Giriniz"
+                         onchange={handleAccount}></lightning-input>
+
+
+        <template for:each={butunAccountlar.data} for:item="acc">
+
+            <ol key={acc.Id}>
+
+                <li>
+                    <p>Accounts::{acc.Name}</p>
+                </li>
+
+
+
+            </ol>   
+
+
+
+
+        </template>
+
+
+
+
+
+    </lightning-card>
+    
+</template>

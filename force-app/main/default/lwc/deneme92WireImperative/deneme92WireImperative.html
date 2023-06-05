@@ -1,0 +1,30 @@
+<template>
+    
+<lightning-card >
+
+<lightning-input type="text" label="Account Isimleri" onchange={handleAccount}></lightning-input>
+
+<lightning-button variant="success" label="Ara" title="Successful action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+
+<template for:each={accountList} for:item="acc">
+
+    <ol key={acc.Id}>
+
+        <li>
+
+            <p>ACCOUNTS::{acc.Name}</p>       
+        
+        </li>
+
+
+
+
+    </ol>
+
+
+</template>
+
+</lightning-card>
+
+
+</template>

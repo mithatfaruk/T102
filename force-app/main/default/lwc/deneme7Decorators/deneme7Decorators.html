@@ -1,0 +1,23 @@
+<template>
+    
+<lightning-card>
+
+<lightning-input type="text"
+                 label="İsim Giriniz"
+                 onblur={handleIsim}></lightning-input>
+                 <lightning-input type="text"
+                 label="Soyisim Giriniz"
+                 onblur={handleYas}></lightning-input>
+
+<h1>AD::{ad}</h1>
+<h1>SOYAD::{soyad}</h1>
+<br><br>
+<h1>AD::{aileBireyleri.name}</h1>
+<h1>YAS::{aileBireyleri.yas}</h1>
+
+</lightning-card>
+
+
+
+
+</template>

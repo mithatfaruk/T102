@@ -1,0 +1,46 @@
+<template>
+    <lightning-card title="DENEME 1">
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col">
+              <span> <lightning-input 
+                type="text"
+                label="Lütfen İsimi Giriniz"
+                onchange={handleIsim}></lightning-input></span>
+            </div>
+            <div class="slds-col">
+              <span><lightning-input 
+                type="text"
+                label="Lütfen Soyisim Giriniz"
+                onchange={handleSoyIsim}></lightning-input></span>
+            </div>
+            <div class="slds-col">
+              <span><lightning-input 
+                type="number"
+                label="Lütfen yaşınızı Giriniz"
+                onchange={handleYas}></lightning-input></span>
+            </div>
+          </div>  
+
+          <br><br>
+          <BR><BR>
+            <lightning-input 
+            type="checkbox"
+            label="Flag"
+            onchange={flagHandler}></lightning-input>
+
+            <template if:true={flag}>
+                <h1>{screen}</h1>
+
+            </template>
+            <template if:false={flag}>
+                <h1>{isim}-{soyisim}-{yas}</h1>
+                 
+            </template>
+
+
+            
+    </lightning-card>
+
+    
+    
+</template>

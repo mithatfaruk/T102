@@ -1,0 +1,26 @@
+<template>
+
+    <lightning-card>
+
+        <p>Naber:: {st}</p>
+
+        <lightning-input type="text"
+                         label="İsim Giriniz"
+                         onchange={handleisim}>
+                        </lightning-input>
+        ilk input ::{isim}
+        <lightning-input type="text"
+                         label="Soyisim Giriniz"
+                         onchange={handleSoyisim}>
+                        </lightning-input>
+            <p>soyisim ::{soyisim}</p>
+        <h1>Tam İsim:: {tamisim}</h1>
+
+        <lightning-input type="number" onchange={number1} label="Enter a number" ></lightning-input>
+        <lightning-input type="number" onchange={number2} label="Enter a number" ></lightning-input>
+
+        <h1>Result of Multiplication::{result}</h1>
+
+    </lightning-card>
+    
+</template>

@@ -1,0 +1,18 @@
+<template>
+    <div class="container">
+      <h1>Choose Frame/Asset</h1>
+      <div class="selection-container">
+        <lightning-radio-group
+          label="Select a Vehicle (Frame)/Asset"
+          options={vehicles}
+          value={selectedVehicle}
+          type="radio"
+          onchange={handleSelection}
+        ></lightning-radio-group>
+      </div>
+      <div class="button-container">
+        <lightning-button variant="brand" label="Link to Opportunity" onclick={linkToOpportunity}></lightning-button>
+      </div>
+    </div>
+  </template>
+  
